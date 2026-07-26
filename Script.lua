@@ -100,7 +100,7 @@ repeat task.wait() until game:IsLoaded()
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title="HKTD Script Beta",
+    Title="HKTD Scripts Beta",
     SubTitle="By HKTD",
     TabWidth=157,
     Size=UDim2.fromOffset(450,300),
@@ -152,6 +152,18 @@ Tabs.Main1:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/TD-Hub.lua", true))()
     end
 })
+Tabs.Main1:AddButton({
+    Title="Zero Hub",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Zero-Hub.lua", true))()
+    end
+})
+Tabs.Main1:AddButton({
+    Title="Zero Hub Menu Redz Beta",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Zero-Hub-Beta.lua", true))()
+    end
+})
 
 -- Tab Forsaken
 Tabs.Main2:AddButton({
@@ -176,6 +188,66 @@ Tabs.Main2:AddButton({
     Title="Auto Backstab V3",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Backstab-V3.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Fake Block",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Fake-Block.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Block V1",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Block-V1.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Block V2",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Block-V2.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Block V3",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Block-V3.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Block V4",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Block-V4.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Slash Shedletsky",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Slash.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Auto Trick Veeronica",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Auto-Trick.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Chance Aimbot V1",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Chance-Aimbot-V1.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Chance Aimbot V2",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Chance-Aimbot-V2.lua", true))()
+    end
+})
+Tabs.Main2:AddButton({
+    Title="Elliot Pizza Aimbot",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Forsaken-Script/refs/heads/main/Elliot-Aimbot.lua", true))()
     end
 })
 
