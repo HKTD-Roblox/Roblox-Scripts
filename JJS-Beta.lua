@@ -48,7 +48,7 @@ TBCorner.CornerRadius = UDim.new(0, 6)
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(0, 200, 1, 0)
 Title.Position = UDim2.new(0, 12, 0, 0)
-Title.Text = "GOJO KILL ALL <font color='#888888'>v3.0</font>"
+Title.Text = "GOJO 0.2 KILL ALL BETA <font color='#888888'>v3.0</font>"
 Title.RichText = true
 Title.TextColor3 = Color3.fromRGB(224, 224, 224)
 Title.TextSize = 20
