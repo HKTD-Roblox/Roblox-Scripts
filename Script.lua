@@ -178,6 +178,12 @@ Tabs.Main1:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Auto-Chest-Beta.lua", true))()
     end
 })
+Tabs.Main1:AddButton({
+    Title="Clear Fog",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Clear-Fog.lua", true))()
+    end
+})
 
 -- Tab Forsaken
 Tabs.Main2:AddButton({
@@ -289,13 +295,19 @@ Tabs.Main4:AddButton({
 Tabs.Main4:AddButton({
     Title="Fly-Gui-V3",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V1.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Fly-Gui-V3.lua", true))()
     end
 })
 Tabs.Main4:AddButton({
     Title="Fly-Gui-V4",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V4.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Fly-Gui-V4.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Fix Lag",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Fix-Lag.lua", true))()
     end
 })
 Tabs.Main4:AddButton({
