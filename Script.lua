@@ -120,10 +120,10 @@ local Tabs = {
 
 -- Tab Info
 Tabs.Main0:AddButton({
-    Title="Blox Fruits Scripts Tổng Hợp",
+    Title="Scripts Tổng Hợp",
     Description="Script By HKTD",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Roblox-Scripts/refs/heads/main/Blox-Fruits-Scripts.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Roblox-Scripts/refs/heads/main/All-Scripts.lua", true))()
     end
 })
 Tabs.Main0:AddButton({
