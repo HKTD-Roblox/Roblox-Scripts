@@ -49,7 +49,7 @@ msg.AnchorPoint = Vector2.new(0.5,0)
 msg.Position = UDim2.new(0.5,0,0.75,0)
 msg.Size = UDim2.new(0,600,0,80)
 msg.BackgroundTransparency = 1
-msg.Text = "HKTD Script"
+msg.Text = "HKTD Scripts"
 msg.TextColor3 = Color3.fromRGB(0,255,255)
 msg.Font = Enum.Font.GothamBlack
 msg.TextScaled = true
@@ -114,19 +114,27 @@ local Tabs = {
     Main0=Window:AddTab({Title="Info"}),
     Main1=Window:AddTab({Title="Blox Fruits"}),
     Main2=Window:AddTab({Title="Forsaken"}),
-    Main3=Window:AddTab({Title="Universal"})
+    Main3=Window:AddTab({Title="Evade"}),
+    Main4=Window:AddTab({Title="Universal"})
 }
 
 -- Tab Info
 Tabs.Main0:AddButton({
-    Title="TikTok",
-    Description="HKTD",
+    Title="Blox Fruits Scripts Tổng Hợp",
+    Description="Script By HKTD",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Roblox-Scripts/refs/heads/main/Blox-Fruits-Scripts.lua", true))()
+    end
+})
+Tabs.Main0:AddButton({
+    Title="My TikTok",
+    Description="My Channel Is HKTD",
     Callback=function()
         setclipboard("https://tiktok.com/@hktd_roblox")
     end
 })
 Tabs.Main0:AddButton({
-    Title="Discord",
+    Title="My Discord",
     Description="HKTD | COMMUNITY",
     Callback=function()
         setclipboard("https://discord.gg/RNgyh8MhxN")
@@ -153,15 +161,21 @@ Tabs.Main1:AddButton({
     end
 })
 Tabs.Main1:AddButton({
+    Title="HKTD Hub Menu Redz Beta",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/HKTD-Hub-Beta.lua", true))()
+    end
+})
+Tabs.Main1:AddButton({
     Title="Zero Hub",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Zero-Hub.lua", true))()
     end
 })
 Tabs.Main1:AddButton({
-    Title="Zero Hub Menu Redz Beta",
+    Title="Auto Chest Beta",
     Callback=function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Zero-Hub-Beta.lua", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Blox-Fruits/refs/heads/main/Auto-Chest-Beta.lua", true))()
     end
 })
 
@@ -251,28 +265,120 @@ Tabs.Main2:AddButton({
     end
 })
 
+-- Tab Evade
+Tabs.Main4:AddButton({
+    Title="Auto Event Farm",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Evade-Script/refs/heads/main/Event-Farm.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Auto E-Dash",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Evade-Script/refs/heads/main/Auto-E-Dash.lua", true))()
+    end
+})
+
 -- Tab Universal
-Tabs.Main3:AddButton({
+Tabs.Main4:AddButton({
+    Title="Auto Clicker",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Auto-Clicker.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Fly-Gui-V3",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V1.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Fly-Gui-V4",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V4.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Esp",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Esp.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
     Title="Wall Hop V1",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V1.lua", true))()
     end
 })
-Tabs.Main3:AddButton({
+Tabs.Main4:AddButton({
     Title="Wall Hop V2",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V2.lua", true))()
     end
 })
-Tabs.Main3:AddButton({
+Tabs.Main4:AddButton({
     Title="Wall Hop V3",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V3.lua", true))()
     end
 })
-Tabs.Main3:AddButton({
+Tabs.Main4:AddButton({
     Title="Wall Hop V4",
     Callback=function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Wall-Hop-V4.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="God Mode",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/God-Mode.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Hitbox Expander",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Hitbox-Expander.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Infinite Jump",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Infinite-Jump.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Noclip",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Noclip.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Speed Hack",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Speed-Hack.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Touch Fling",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Touch-Fling.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="FE-Sound",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/FE-Sound.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Fake Lag",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/Fake-Lag.lua", true))()
+    end
+})
+Tabs.Main4:AddButton({
+    Title="Teleport To Player",
+    Callback=function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HKTD-Roblox/Universal-Script/refs/heads/main/TP-To-Player.lua", true))()
     end
 })
