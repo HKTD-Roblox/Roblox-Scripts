@@ -171,7 +171,7 @@ local Window = Fluent:CreateWindow({
 })
 ----------------------------------------Tab----------------------------------------
 local Tabs = {
-    If = Window:AddTab({ Title = "Info", Icon = "" }),
+    Info = Window:AddTab({ Title = "Info", Icon = "" }),
     Client = Window:AddTab({ Title = "Client", Icon = "" }),
     Dev = Window:AddTab({ Title = "Developer", Icon = "" }),
     LP = Window:AddTab({ Title = "Local Player", Icon = "" }),
@@ -189,11 +189,11 @@ local Tabs = {
 -------------------------------Info----------------------------------------
 print("Loading Info Tab")
 wait(1)
-Tabs.If:AddParagraph({
-        Title = "Player",
-        Content = "Thank "..game.Players.LocalPlayer.Name.." for use script!"
+    Tabs.If:AddParagraph({
+        Title = "Thank "..game.Players.LocalPlayer.Name.." for using My Script!",
+        Content = "❤️❤️❤️❤️❤️"
     })
-
+    
     Tabs.If:AddParagraph({
         Title = "HKTD Hub",
         Content = "Make By HKTD"
@@ -201,7 +201,7 @@ Tabs.If:AddParagraph({
     
     Tabs.If:AddButton({
         Title = "TikTok",
-        Description = "",
+        Description = "My TikTok Channel",
         Callback = function()
             setclipboard("https://tiktok.com/@hktd_roblox")
         end
@@ -209,13 +209,20 @@ Tabs.If:AddParagraph({
         
     Tabs.If:AddButton({
         Title = "Discord",
-        Description = "",
+        Description = "My Discord Server",
         Callback = function()
             setclipboard("https://discord.gg/RNgyh8MhxN")
         end
     })
- 
-    wait(.1)
+
+    Tabs.If:AddButton({
+        Title = "GitHub",
+        Description = "My GitHub Account",
+        Callback = function()
+            setclipboard("https://github.com/HKTD-Roblox")
+        end
+    })
+
 ----------------------------------------Client----------------------------------------
 print("Client Tab Loading")
 wait(1)
