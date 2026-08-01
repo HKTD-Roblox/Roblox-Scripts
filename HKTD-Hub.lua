@@ -198,6 +198,14 @@ wait(1)
         Title = "HKTD Hub",
         Content = "Make By HKTD"
     })
+            
+    Tabs.If:AddButton({
+        Title = "Discord",
+        Description = "My Discord Server",
+        Callback = function()
+            setclipboard("https://discord.gg/RNgyh8MhxN")
+        end
+    })
     
     Tabs.If:AddButton({
         Title = "TikTok",
@@ -206,12 +214,12 @@ wait(1)
             setclipboard("https://tiktok.com/@hktd_roblox")
         end
     })
-        
+
     Tabs.If:AddButton({
-        Title = "Discord",
-        Description = "My Discord Server",
-        Callback = function()
-            setclipboard("https://discord.gg/RNgyh8MhxN")
+        Title = "Youtube",
+        Description = "My Youtube Channel",
+        Callback = function()n
+            setclipboard("Coming soon!")
         end
     })
 
